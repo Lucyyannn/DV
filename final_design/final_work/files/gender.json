@@ -1,0 +1,338 @@
+{
+    "name": "Sentiments-time-gender",
+    "size": 0,
+    "children": [
+        {
+            "name": "very-positive",
+            "children": [
+                {
+                    "name": "2011",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.603
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.563
+                        }
+                    ]
+                },
+                {
+                    "name": "2015",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.711
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.655
+                        }
+                    ]
+                },
+                {
+                    "name": "2018",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.598
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.567
+                        }
+                    ]
+                },
+                {
+                    "name": "2019",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.453
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.362
+                        }
+                    ]
+                },
+                {
+                    "name": "2020",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.272
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.294
+                        }
+                    ]
+                },
+                {
+                    "name": "2023",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.605
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.616
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "positive",
+            "children": [
+                {
+                    "name": "2011",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.196
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.184
+                        }
+                    ]
+                },
+                {
+                    "name": "2015",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.129
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.114
+                        }
+                    ]
+                },
+                {
+                    "name": "2018",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.216
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.197
+                        }
+                    ]
+                },
+                {
+                    "name": "2019",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.334
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.32
+                        }
+                    ]
+                },
+                {
+                    "name": "2020",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.291
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.224
+                        }
+                    ]
+                },
+                {
+                    "name": "2023",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.147
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.149
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "negative",
+            "children": [
+                {
+                    "name": "2011",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.151
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.201
+                        }
+                    ]
+                },
+                {
+                    "name": "2015",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.103
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.164
+                        }
+                    ]
+                },
+                {
+                    "name": "2018",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.115
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.161
+                        }
+                    ]
+                },
+                {
+                    "name": "2019",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.101
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.215
+                        }
+                    ]
+                },
+                {
+                    "name": "2020",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.314
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.351
+                        }
+                    ]
+                },
+                {
+                    "name": "2023",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.17
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.164
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "very-negative",
+            "children": [
+                {
+                    "name": "2011",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.049
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.052
+                        }
+                    ]
+                },
+                {
+                    "name": "2015",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.056
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.067
+                        }
+                    ]
+                },
+                {
+                    "name": "2018",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.072
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.075
+                        }
+                    ]
+                },
+                {
+                    "name": "2019",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.112
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.103
+                        }
+                    ]
+                },
+                {
+                    "name": "2020",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.123
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.131
+                        }
+                    ]
+                },
+                {
+                    "name": "2023",
+                    "children": [
+                        {
+                            "name": "Male",
+                            "size": 0.078
+                        },
+                        {
+                            "name": "Female",
+                            "size": 0.07
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@d3/sunburst-component",
+  "main": "a601aba88046a626@350.js",
+  "version": "350.0.0",
+  "homepage": "https://observablehq.com/@d3/sunburst-component",
+  "author": "D3 (https://observablehq.com/@d3)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "peerDependencies": {
+    "@observablehq/runtime": "^5.9.7"
+  },
+  "dependencies": {
+    "@d3/sunburst-component": "https://api.observablehq.com/@d3/sunburst-component@350.tgz?v=3",
+    "express": "^4.18.2"
+  },
+  "description": "https://observablehq.com/@d3/sunburst-component@350",
+  "license": "ISC"
+}

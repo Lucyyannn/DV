@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>小红书账号拆解实验室</title>
+
+    <style type="text/css">
+        body {
+            display: flex;
+            background-image: url("./photo/background1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            color: Sienna;
+            text-align: center;
+            font-family: Cambria;
+        }
+
+        h2 {
+            text-align: right;
+            font-style: italic;
+        }
+
+        p.link1 {
+            font-family: 'HONOR Sans';
+            font-weight: 700;
+            color:indianred;
+            text-decoration:blink;
+            font-size: 30px;
+            background-size: cover;
+            position: fixed;
+        }
+
+        #container0 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vw;
+            overflow-y: scroll;
+            float: right;
+        }
+
+
+        #menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:start;
+            flex: 0 0 auto;
+            height: inherit;
+            width: 20vw;
+            position: fixed;
+            top: 15vw;
+            background-color:antiquewhite;
+            float: left;
+        }
+
+        #content {
+            position: absolute;
+            top: 15vw;
+            left: 25vw;
+            width: 75vw;
+        }
+
+        .slideshow {
+            display: none;
+            float: right;
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            right: 100px;
+            transform: translateY(-50%);
+        }
+
+        .svg-container {
+            position: relative;
+            width: 75vw;
+            float: right;
+            height: 650px;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            transform: translate(-50%,50%);
+            color: white;
+            text-align: center;
+        }
+        canvas{
+            border:0;
+        }
+        ul{
+            list-style-type:none;
+        }
+    </style>
+    <script>
+        var images = ["./photo/example01.png", "./photo/example01.png", "./photo/example02.png", "./photo/example03.png", "./photo/example04.png", "./photo/example05.png", "./photo/example06.png",]
+        var currentIndex = 0;
+
+        function showNextImage() {
+            var imgElements = document.getElementsByClassName("slideshow");
+            for (var i = 0; i < imgElements.length; i++) {
+                imgElements[i].style.display = "none";
+            }
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElements[currentIndex].style.display = "block";
+        }
+        setInterval(showNextImage, 2000);
+    </script>
+</head>
+
+
+<body>
+ 
+    <!--导航栏-->
+    <div id="menu" style="height:fit-content;width: 20vw; position: fixed; background-color:bisque;float:left;">
+        <p style="font-size:25px;font-style:italic;color:peru;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容概览：</p>
+          
+        <ul>
+            <li><p class="link1" style="font-weight:bold;">&nbsp;&nbsp;一、账号简介</p><br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /></li>
+
+            <li><p class="link1" style="font-weight:bold;">&nbsp;&nbsp;二、优点分析</p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></li>
+
+            <li><p class="link1" style="font-weight:bold;">&nbsp;&nbsp;三、普通人借鉴</p><br /><br /><br /><br /></li>
+        </ul>    
+    </div>
+
+    <div id="container0">
+        <!--标题栏-->
+        <div id="header" style="width:95vw;height:15vw;">
+            <h1>成长型博主篇之“是阿秋哦”</h1><br />
+            <h2>一年涨粉38w，探寻00后女孩的涨粉秘诀</h2>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <!--内容栏-->
+        <div id="content">
+            <!--第一部分-->
+            <canvas id="myCanvasone" width="380" height="100"></canvas>
+            <script>
+                const canvas = document.getElementById('myCanvasone');
+                const ctx = canvas.getContext('2d');
+
+                const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+                gradient.addColorStop(0, 'red');
+                gradient.addColorStop(0.25, 'brown');
+                gradient.addColorStop(0.5, 'gold');
+                gradient.addColorStop(0.75, 'darkred');
+                gradient.addColorStop(1, 'red');
+
+                ctx.font = '65px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                ctx.strokeStyle = gradient;
+
+                ctx.lineWidth = 3;
+                ctx.strokeText('账号简介：', canvas.width / 2, canvas.height / 3);
+            </script>
+
+            <p>
+                <img src="./photo/homepage.jpg" alt="individual homepage" style="float:right;margin-left:10vw;margin-right:8vw;" width="350" height="300" />
+            </p>
+
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">昵称</td>
+                        <td><br />&nbsp;&nbsp;是阿秋哦<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">头像类型</td>
+                        <td><br />&nbsp;&nbsp;个人生活写真<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">简介</td>
+                        <td>
+                            <p>（成就标签）百万大号前负责人|00后</p>                       <!--这里用表格-->
+                            <p>（个性状态）自由职业ing，探寻人生更多可能</p>
+                            <p>（附加信息）不看私信，评论区见哦~</p>
+                            <p>（邮箱地址）1305243644@qq.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">标签</td>
+                        <td><br />&nbsp;&nbsp;互联网运营、vlog博主<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">当前粉丝数</td>
+                        <td><br />&nbsp;&nbsp;&nbsp;41.6万<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">内容定位</td>
+                        <td><br />&nbsp;&nbsp;成长干货、自媒体运营、生活vlog<br /><br /></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;font-size:17px;">主页链接</td>
+                        <td>
+                            <a href="https://www.xiaohongshu.com/user/profile/591982366a6a694fa42e5848?xhsshare=CopyLink&appuid=602291930000000001008765&apptime=1696409302" target="_blank"><br />&nbsp;&nbsp;点击进入博主主页<br /><br /></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+            <!--第二部分-->
+            <canvas id="myCanvastwo" width="380" height="100"></canvas>
+            <script>
+                const canvas2 = document.getElementById('myCanvastwo');
+                const ctx2 = canvas2.getContext('2d');
+
+                const gradient2 = ctx2.createLinearGradient(0, 0, canvas2.width, 0);
+                gradient2.addColorStop(0, 'red');
+                gradient2.addColorStop(0.25, 'brown');
+                gradient2.addColorStop(0.5, 'gold');
+                gradient2.addColorStop(0.75, 'darkred');
+                gradient2.addColorStop(1, 'red');
+
+                ctx2.font = '65px Arial';
+                ctx2.textAlign = 'center';
+                ctx2.textBaseline = 'middle';
+
+                ctx2.strokeStyle = gradient2;
+
+                ctx2.lineWidth = 3;
+                ctx2.strokeText('优点分析：', canvas2.width / 2, canvas2.height / 3);
+            </script>
+            <br />
+
+            <div class="svg-container">
+                <svg width=700px height=100%>
+                    <defs>
+                        <linearGradient id="firstGradient" x1="25%" y1="50%" x2="100%" y2="75%">
+                            <stop offset="25%" style="stop-color:blanchedalmond;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:bisque;stop-opacity:1" />
+                            <stop offset="75%" style="stop-color:cornsilk;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:burlywood;stop-opacity:1" />
+
+                        </linearGradient>
+                        <linearGradient id="secondGradient" x1="25%" y1="50%" x2="100%" y2="75%">
+                            <stop offset="100%" style="stop-color:bisque;stop-opacity:1" />
+                            <stop offset="75%" style="stop-color:cornsilk; stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:chocolate;stop-opacity:1" />
+                            <stop offset="25%" style="stop-color:darkred;stop-opacity:1" />
+
+                        </linearGradient>
+
+                    </defs>
+
+                    <!--11111-->
+                    <rect x="45" y="25" width="450" height="120" fill="url(#firstGradient)" stroke="brown" />
+
+                    <text x="50" y="30" text-anchor="start">
+                        <tspan x="60" dy="1.7em">(1)上下两图结合，真人出境；</tspan>
+                        <tspan x="60" dy="1.7em">(2)结合工作场景，更加真实；</tspan>
+                        <tspan x="60" dy="1.7em">(3)标题居中突出，画面统一美观</tspan>
+                    </text>
+
+                    <ellipse cx="540" cy="85" rx="50" ry="80" fill="peru" stroke="darkred" />
+                    <text x="520" y="30" text-ancher="start" style="font-size:25px;">
+                        <tspan x="520" dy="2.0em">封</tspan>
+                        <tspan x="520" dy="2.0em">面</tspan>
+                    </text>
+                    <!--22222-->
+                    <rect x="100" y="170" width="450" height="120" fill="url(#secondGradient)" stroke="brown" />
+
+                    <text x="105" y="175" text-anchor="start">
+                        <tspan x="110" dy="1.7em">(1)打造人设+聚焦目标人群痛点+反差化数据凸显吸睛</tspan>
+                        <tspan x="110" dy="1.7em">(2)有自己的标题公式，如：年龄+学历+收入、</tspan>
+                        <tspan x="110" dy="1.7em">职业经历+解决方法+结果展示</tspan>
+                    </text>
+
+                    <ellipse cx="50" cy="230" rx="50" ry="80" fill="peru" stroke="darkred" />
+                    <text x="40" y="175" text-ancher="start" style="font-size:25px;">
+                        <tspan x="40" dy="2.0em">标</tspan>
+                        <tspan x="40" dy="2.0em">题</tspan>
+                    </text>
+                    <!--33333-->
+                    <rect x="45" y="315" width="450" height="120" fill="url(#firstGradient)" stroke="brown" />
+
+                    <text x="50" y="320" text-anchor="start">
+                        <tspan x="60" dy="1.7em">(1)有价值：高能干货输出-> 点赞率、收藏率get</tspan>
+                        <tspan x="60" dy="1.7em">(2)有故事感：边分享干货，边讲述个人经历->吸粉量get</tspan>
+                        <tspan x="60" dy="1.7em">(3)有温度：语言、背景温和，内容结尾端上鸡汤->赞粉率get</tspan>
+                    </text>
+
+                    <ellipse cx="540" cy="375" rx="50" ry="80" fill="peru" stroke="darkred" />
+                    <text x="520" y="320" text-ancher="start" style="font-size:25px;">
+                        <tspan x="520" dy="2.0em">内</tspan>
+                        <tspan x="520" dy="2.0em">容</tspan>
+                    </text>
+                    <!--44444-->
+                    <rect x="100" y="465" width="450" height="120" fill="url(#secondGradient)" stroke="brown" />
+
+                    <text x="105" y="470" text-anchor="start">
+                        <tspan x="110" dy="1.7em">篇篇作品打造人设：</tspan>
+                        <tspan x="110" dy="1.7em">在作品末尾附上个人介绍，让读者透过作品看到人、</tspan>
+                        <tspan x="110" dy="1.7em">关注人，从而获得持续的流量</tspan>
+                    </text>
+
+                    <ellipse cx="50" cy="525" rx="50" ry="80" fill="peru" stroke="darkred" />
+                    <text x="40" y="470" text-ancher="start" style="font-size:25px;">
+                        <tspan x="40" dy="2.0em">技</tspan>
+                        <tspan x="40" dy="2.0em">巧</tspan>
+                    </text>
+
+                </svg>
+                <img class="slideshow" src="./photo/example01.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example02.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example03.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example04.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example05.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example06.png" alt="Slideshow Image" />
+                <img class="slideshow" src="./photo/example07.png" alt="Slideshow Image" />
+            </div>
+
+            <br /><br />
+            <p style="font-size:27px;font-style:italic;color:saddlebrown;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你学到了吗？</p>
+            <br /><br />
+
+
+            <!--第三部分-->
+            <canvas id="myCanvasthree" width="680" height="130"></canvas>
+            <script>
+                const canvas3 = document.getElementById('myCanvasthree');
+                const ctx3 = canvas3.getContext('2d');
+
+                const gradient3 = ctx3.createLinearGradient(0, 0, canvas3.width, 0);
+                gradient3.addColorStop(0, 'red');
+                gradient3.addColorStop(0.25, 'brown');
+                gradient3.addColorStop(0.5, 'gold');
+                gradient3.addColorStop(0.75, 'darkred');
+                gradient3.addColorStop(1, 'red');
+
+                ctx3.font = '65px Arial';
+                ctx3.textAlign = 'center';
+                ctx3.textBaseline = 'middle';
+
+                ctx3.strokeStyle = gradient3;
+
+                ctx3.lineWidth = 3;
+                ctx3.strokeText('普通人可以借鉴什么？', canvas3.width / 2, canvas3.height / 3);
+            </script>
+
+            <div class="image-container">
+                <img src="./photo/boardfinal.png" alt="BlackBoard Image" width="900" height="650">
+                <div class="text-overlay">
+                    <p style="font-size:22px;font-family:STKaiti;">（1）封面统一，形成自己的封面风格+标题公式</p><br />
+                    <p style="font-size:22px;font-family:STKaiti;">（2）“利他心态”，创作有价值(实用价值/情绪价值）的内容</p><br />
+                    <p style="font-size:22px;font-family:STKaiti;">（3）在作品中打造个人ip，吸引读者关注</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</body>
+</html>

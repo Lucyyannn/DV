@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>年轻人心态可视分析2</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<style>
+ body {
+        display: flex;
+        background-image: url("./photo/background.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .button_link{
+  text-decoration: none; /* 去掉下划线 */
+  font-family: Arial, sans-serif;
+}
+#text_edit{
+  color:rgb(85, 20, 154) ;
+  font-size:18px;
+}
+#title_edit{
+  color:rgb(26, 9, 138);
+
+}
+    #mask {
+         position:absolute; /* 固定在窗口位置 */  
+         width: 80%; 
+       
+         background-color: rgba(248, 247, 249, 0.863);
+
+         left: 10%; 
+         top: 0;
+         margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+   
+    <div id="mask">
+
+        <!-- 标题 -->
+        <br/><br/>
+        <canvas id="textTitle" width="600" height="60" style="display: block; margin: 0 auto;"></canvas> 
+
+       
+        <!-- 跳转按钮 -->  
+ <div style="display:flex; justify-content:space-between;">
+    <button style="width:20%; font-family: Arial, sans-serif; font-size: 16px;border: 2px solid;text-decoration: none;
+    border-image: linear-gradient(to right, rgb(201, 134, 134), rgb(102, 102, 235), rgb(199, 139, 139)) 1;"><a href="./index.html" class="button_link">首页</a></button>
+    <button style="width:20%; font-family: Arial, sans-serif; font-size: 16px;text-decoration: none;
+    border: 2px solid;border-image: linear-gradient(to right, rgb(201, 134, 134), rgb(102, 102, 235), rgb(199, 139, 139))1;"><a href="./index1.html" class="button_link">地区差异</a></button>  
+    <button style="width:20%; font-family: Arial, sans-serif; font-size: 16px;border: 2px solid;text-decoration: none;
+    border-image: linear-gradient(to right, rgb(201, 134, 134), rgb(102, 102, 235), rgb(199, 139, 139)) 1;"><a href="./index2.html" class="button_link" >时间差异</a></button>
+    <button style="width:20%; font-family: Arial, sans-serif; font-size: 16px;border: 2px solid;text-decoration: none;
+    border-image: linear-gradient(to right, rgb(201, 134, 134), rgb(102, 102, 235), rgb(199, 139, 139)) 1;"><a href="./index3.html" class="button_link">性别差异</a></button>
+    <button style="width:20%; font-family: Arial, sans-serif; font-size: 16px;border: 2px solid;text-decoration: none;
+    border-image: linear-gradient(to right, rgb(201, 134, 134), rgb(102, 102, 235), rgb(199, 139, 139)) 1;"><a href="./index4.html" class="button_link">影响因素</a></button>
+  </div>
+ 
+        <!-- 图表 -->
+        <div id="chart3"></div>
+        <form class="form">
+          <button style="float:right;"><a href="./index2.html" style="font-size: large; color:rgb(186, 93, 108);">重新播放</a></button>
+      </form>
+         <!--分析-->
+         <h1 id="title_edit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发现：</h1>
+         <p id="text_edit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微博上年轻人言论以积极为主，2020年前后情感倾向中消极占比最大，其余均为非常积极占比最大；</p>
+         <p id="text_edit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;占比最低的始终都是非常消极；</p>
+        <script>
+       // 绘制标题文字
+       var textCanvas = document.getElementById("textTitle");
+       textCanvas.width = 800;
+       textCanvas.height = 80;
+var ctx = textCanvas.getContext("2d");  
+const gradient = ctx.createLinearGradient(0, 0, textCanvas.width, 0);
+                gradient.addColorStop(0, 'BlueViolet ');
+                gradient.addColorStop(0.20, 'DarkSlateBlue ' );
+                gradient.addColorStop(0.35, 'DarkSlateBlue ' );
+                gradient.addColorStop(0.40, 'MediumPurple  ');
+                gradient.addColorStop(0.50, 'DarkSlateBlue ' );
+                gradient.addColorStop(1, 'BlueViolet ');
+ctx.strokeStyle = gradient;
+ctx.font = "40px 华文楷体"; 
+ctx.fillStyle = "hsl(" + 260 + ",100%,80%)";
+ctx.lineCap = "round";
+ctx.lineWidth = 5;
+ctx.shadowBlur = 10;
+ctx.strokeText("2010~2023年年轻人情感倾向时间柱状追及图", 10, 45);  
+ctx.fillText("2010~2023年年轻人情感倾向时间柱状追及图", 10, 45);
+ 
+        </script>
+        
+        <script type="module">
+
+            import define from "./index_2.js";
+            import {Runtime, Library, Inspector} from "./runtime.js";
+            
+            const runtime = new Runtime();
+            const main_2 = runtime.module(define, Inspector.into(document.getElementById('chart3')));
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+{
+    "name": "Mental States",
+    "value":0,
+    "children": [
+        {
+            "name": "very-positive",
+            "value": 0,
+            "children": [
+                {
+                    "name": "恋爱",
+                    "value": 860
+                },
+                {
+                    "name": "升职",
+                    "value": 876
+                },
+                {
+                    "name": "科技进步",
+                    "value": 101
+                },
+                {
+                    "name": "吃",
+                    "value": 1573
+                },
+                {
+                    "name": "回家",
+                    "value": 432
+                },
+                {
+                    "name": "化妆",
+                    "value": 357
+                },
+                {
+                    "name": "学业成就",
+                    "value": 2423
+                },
+                {
+                    "name": "追星",
+                    "value": 1931
+                },
+                {
+                    "name": "旅游",
+                    "value": 1685
+                },
+                {
+                    "name": "购物",
+                    "value": 688
+                }
+            ]
+        },
+        {
+            "name": "positive",
+            "value": 1,
+            "children": [
+                {
+                    "name": "猫猫",
+                    "value": 502
+                },
+                {
+                    "name": "体制",
+                    "value": 109
+                },
+                {
+                    "name": "歌手",
+                    "value": 173
+                },
+                {
+                    "name": "爱",
+                    "value": 232
+                },
+                {
+                    "name": "朋友",
+                    "value": 326
+                },
+                {
+                    "name": "音乐",
+                    "value": 202
+                },
+                {
+                    "name": "旅行",
+                    "value": 262
+                },
+                {
+                    "name": "美食",
+                    "value": 401
+                },
+                {
+                    "name": "运动",
+                    "value": 470
+                },
+                {
+                    "name": "读书",
+                    "value": 189
+                }
+            ]
+        },
+        {
+            "name": "negative",
+            "value": 2,
+            "children": [
+                {
+                    "name": "日本",
+                    "value": 237
+                },
+                {
+                    "name": "城管",
+                    "value": 165
+                },
+                {
+                    "name": "上班",
+                    "value": 781
+                },
+                {
+                    "name": "假期",
+                    "value": 422
+                },
+                {
+                    "name": "减肥",
+                    "value": 264
+                },
+                {
+                    "name": "考试",
+                    "value": 538
+                },
+                {
+                    "name": "交通堵塞",
+                    "value": 336
+                },
+                {
+                    "name": "环境污染",
+                    "value": 199
+                },
+                {
+                    "name": "网络暴力",
+                    "value": 344
+                },
+                {
+                    "name": "老板",
+                    "value": 357
+                }
+            ]
+        },
+        {
+            "name": "very-negative",
+            "value": 3,
+            "children": [
+                {
+                    "name": "加班",
+                    "value": 428
+                },
+                {
+                    "name": "失业",
+                    "value": 352
+                },
+                {
+                    "name": "国足",
+                    "value": 101
+                },
+                {
+                    "name": "失恋",
+                    "value": 57
+                },
+                {
+                    "name": "卷",
+                    "value": 921
+                },
+                {
+                    "name": "生病",
+                    "value": 24
+                },
+                {
+                    "name": "钱",
+                    "value": 81
+                },
+                {
+                    "name": "战争",
+                    "value": 83
+                },
+                {
+                    "name": "灾难",
+                    "value": 59
+                },
+                {
+                    "name": "歧视",
+                    "value": 73
+                }
+            ]
+        }
+    ]
+}
